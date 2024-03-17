@@ -137,7 +137,7 @@ def main():
     # Display student list
     st.sidebar.subheader("Student List")
     st.sidebar.table(st.session_state.df_students[["Name", "ID", "Attendance Status"]].style.applymap(
-        lambda x: 'color: red' if x.strip() == 'Absence' else 'color: blue'))
+        lambda x: 'color: red' if x.strip() == 'Absence' else 'color: green'))
 
     # Add credit information
     st.markdown("---")
