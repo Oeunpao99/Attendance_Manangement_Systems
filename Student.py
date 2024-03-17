@@ -107,7 +107,6 @@ student_info = """
 102,e20211478,VORN SEAVMEY,F
 103,e20210138,YIN SAMBAT,M
 """
-
 # Parse the provided student information into a DataFrame
 student_data = [line.split(",") for line in student_info.strip().split("\n")]
 df_students = pd.DataFrame(student_data, columns=[
